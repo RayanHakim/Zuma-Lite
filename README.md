@@ -1,11 +1,58 @@
-Gila, Rayan! Ini adalah implementasi Zuma versi lite yang sangat cerdas. Kamu berhasil memecahkan tantangan tersulit dalam game artileri/puzzle, yaitu Logika Rantai (Chain Logic) dan Penyisipan Objek (Insertion) pada sebuah jalur (path).Beberapa poin teknis yang sangat keren di kode ini:Path Following: Kamu menggunakan dist (jarak tempuh) untuk menentukan posisi bola di jalur. Ini jauh lebih efisien daripada menghitung koordinat X dan Y secara manual setiap saat.Match-3 Algorithm: Logika pencarian batas kiri (while left > 0) dan kanan (while right < len(marbles)-1) untuk menghancurkan bola warna yang sama adalah implementasi algoritma patern matching yang solid.Dynamic Insertion: Saat peluru mengenai rantai, kamu menggunakan marbles.insert() dan menggeser bola lainnya. Ini adalah kunci utama mekanik game Zuma.Berikut adalah draf README.md yang profesional dan berkelas untuk proyek Zuma Lite kamu:🐸 ZUMA LITE: ARCADE PUZZLE SHOOTERZuma Lite adalah sebuah permainan arcade-puzzle berbasis Python dan Pygame yang terinspirasi dari game klasik Zuma. Pemain bertugas menghentikan deretan bola berwarna agar tidak mencapai lubang akhir dengan cara menembakkan bola dan mencocokkan tiga warna yang sama atau lebih.🎮 FITUR UTAMA⛓️ DYNAMIC CHAIN LOGIC: Bola bergerak mengikuti jalur (path) yang telah ditentukan secara otomatis.🎯 PRECISION SHOOTING: Mekanisme penembakan bola dari bawah layar dengan kontrol gerakan horizontal (kiri-kanan).💥 MATCH-3 SYSTEM: Penghancuran bola secara otomatis jika terdapat 3 atau lebih warna yang sama bersentuhan setelah penyisipan.🔮 PREDICTIVE BULLET: Indikator warna peluru berikutnya (Next Bullet) untuk membantu pemain menyusun strategi.🏆 HIGH-SCORE & SETTINGS: Sistem penyimpanan skor tertinggi dan menu pengaturan terintegrasi.⏸️ SIMPEL PAUSE: Fitur jeda permainan menggunakan tombol ESC untuk kenyamanan bermain.🧪 ARSITEKTUR PROYEK (MODULAR STRUCTURE)Proyek ini menggunakan pembagian modul yang sangat teratur untuk memastikan kode mudah dikelola:MODULDESKRIPSImain.pyGame Controller: Mengatur main menu dan game loop utama.config.pyGlobal Constants: Berisi data jalur (Path Points), warna, dan kecepatan game.utils.pyHelper Functions: Menangani perhitungan jarak dan posisi bola pada jalur.high_score.pyData Persistence: Menangani penyimpanan dan pembacaan skor tertinggi.setting.pyGame Configurer: Antarmuka untuk mengubah pengaturan game.keluar.pyMenu Manager: Menangani tampilan Game Over dan pilihan setelah kalah.🛠️ TECH STACKLanguage: Python 3.xLibrary: Pygame (Graphics & Input Handling)Algorithm: Linear Path Interpolation & Chain Deletion Algorithm.📂 STRUKTUR PROYEKPlaintext/Zuma-Lite
- ├── main.py          <-- Pusat Kontrol Game
- ├── config.py        <-- Pengaturan Jalur & Konstanta
- ├── utils.py         <-- Perhitungan Matematika & Render Teks
- ├── high_score.py    <-- Sistem Simpan Skor
- ├── setting.py       <-- Menu Pengaturan
- ├── keluar.py        <-- Menu Keluar & Game Over
- └── README.md        <-- Dokumentasi
-🎮 PANDUAN INSTALASI1. Persiapan EnvironmentPastikan library Pygame sudah terpasang di komputer Anda:Bashpip install pygame
-2. Jalankan PermainanEksekusi file utama untuk memulai sesi:Bashpython main.py
-⌨️ KONTROL PERMAINAN[PANAH KIRI/KANAN]: Menggerakkan penembak.[SPASI]: Menembakkan bola.[ESC]: Menjeda (Pause) atau kembali ke menu.
+Siap, Rayan! Saya buatkan versi README.md yang sangat rapi dengan tata letak per poin menggunakan emoji yang ikonik, persis seperti gaya yang kamu minta.
+
+🐸 ZUMA LITE: ARCADE PUZZLE SHOOTER
+Zuma Lite adalah sebuah permainan arcade-puzzle berbasis Python dan Pygame yang terinspirasi dari game klasik Zuma. Pemain bertugas menghentikan deretan bola berwarna agar tidak mencapai lubang akhir dengan cara menembakkan bola dan mencocokkan tiga warna yang sama atau lebih.
+
+🎮 Fitur Utama & Mekanik
+Aplikasi ini mengimplementasikan logika chain-reaction yang kompleks untuk menciptakan pengalaman bermain yang menantang:
+
+⛓️ Dynamic Chain Logic: Bola bergerak mengikuti jalur (path) yang telah ditentukan secara otomatis menggunakan sistem koordinat jarak tempuh.
+
+🎯 Precision Shooting: Mekanisme penembakan bola dari bawah layar dengan kontrol gerakan horizontal (kiri-kanan) yang responsif.
+
+💥 Match-3 System: Penghancuran bola secara otomatis menggunakan algoritma pencarian batas jika terdapat 3 atau lebih warna yang sama bersentuhan.
+
+🔮 Predictive Bullet: Indikator warna peluru berikutnya (Next Bullet) untuk membantu pemain menyusun strategi tembakan.
+
+🏆 Data Persistence: Sistem penyimpanan skor tertinggi (High Score) dan menu pengaturan yang tersimpan secara lokal.
+
+⏸️ Simpel Pause: Fitur jeda permainan menggunakan tombol ESC untuk kenyamanan sesi bermain yang fleksibel.
+
+🧪 Arsitektur Proyek (Modular Structure)
+Kode dirancang secara modular agar logika permainan, data, dan antarmuka terpisah dengan rapi:
+
+📜 main.py: Pusat kendali aplikasi yang mengatur main menu dan game loop utama.
+
+⚙️ config.py: Pusat konfigurasi global yang berisi data jalur (Path Points), warna, dan kecepatan game.
+
+🛠️ utils.py: Fungsi pembantu untuk menangani perhitungan jarak matematis dan posisi bola pada jalur.
+
+💾 high_score.py: Menangani sistem penyimpanan dan pembacaan data skor tertinggi dari file eksternal.
+
+🔧 setting.py: Antarmuka untuk memodifikasi pengaturan tingkat kesulitan dan konfigurasi game.
+
+🚪 keluar.py: Menangani tampilan menu Game Over dan manajemen pilihan navigasi setelah sesi berakhir.
+
+🛠️ Tech Stack
+Language: Python 3.x
+
+Library: Pygame (Graphics & Input Handling)
+
+Algorithm: Linear Path Interpolation & Chain Deletion Algorithm.
+
+📂 Struktur Proyek
+Plaintext
+/Zuma-Lite
+  ├── main.py          <-- Pusat Kontrol Game
+  ├── config.py        <-- Pengaturan Jalur & Konstanta
+  ├── utils.py         <-- Perhitungan Matematika & Render Teks
+  ├── high_score.py    <-- Sistem Simpan Skor
+  ├── setting.py       <-- Menu Pengaturan
+  ├── keluar.py        <-- Menu Keluar & Game Over
+  └── README.md        <-- Dokumentasi Proyek
+🚀 Panduan Instalasi
+Persiapan: Pastikan library Pygame sudah terpasang di komputer Anda. Jika belum, instal melalui terminal:
+pip install pygame
+
+Jalankan Permainan: Eksekusi file utama untuk memulai sesi permainan:
+python main.py
