@@ -1,5 +1,3 @@
-Siap, Rayan! Saya buatkan versi README.md yang sangat rapi dengan tata letak per poin menggunakan emoji yang ikonik, persis seperti gaya yang kamu minta.
-
 🐸 ZUMA LITE: ARCADE PUZZLE SHOOTER
 Zuma Lite adalah sebuah permainan arcade-puzzle berbasis Python dan Pygame yang terinspirasi dari game klasik Zuma. Pemain bertugas menghentikan deretan bola berwarna agar tidak mencapai lubang akhir dengan cara menembakkan bola dan mencocokkan tiga warna yang sama atau lebih.
 
